@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>拍卖-详情页</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+
+<div class="sale-show">
+  <div class="swiper-container banner">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/banner-sale2.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner-sale2.jpg"></div>
+      <div class="swiper-slide"><img src="images/banner-sale2.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="title">
+    <img src="images/sale-logo.jpg">
+    <div class="text">
+      <p>工艺美术大师—陈巧生</p>
+      <p>水红铜 香炉</p>
+    </div>
+  </div>
+  <div class="clear" style="width:100%; height:2vw; background:#f3f3f3;"></div>
+
+  <div class="details">
+    <a class="refresh">刷新价格</a>
+    <p>当前价格：<strong>26000</strong>元</p>
+    <p>起拍价：<b>3000</b>元&nbsp;&nbsp;&nbsp;最小加价：<b>10</b>元 </p>
+    <p>运费：<span>快递/20元</span></p>
+    <p><img src="images/time-tb.png">剩余时间：<time>3小时20分48秒</time></p>
+    <p>开始时间：<span>2017-03-12 10:00</span></p>
+    <p>结束时间：<span>2017-03-15 10:00</span></p>
+    <p>竞标/浏览：<span>35/1021</span></p>
+    <p>线上收款：<span>云生·嘉骐中介保护，即时到账</span></p>
+  </div>
+
+</div>
+
+
+<div class="clear" style="width:100%; height:17vw;"></div>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+//图片轮播
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+</body>
+</html>

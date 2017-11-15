@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>确认订单</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="header">
+  <a href="" class="return"><img src="images/right-i2.png"></a>
+  确认订单
+</div>
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+<div class="pay">
+
+<!-- 地址 -->
+<a class="pay-add" href="add-admin.html">
+<i><img src="images/right-i2.png"></i>
+<em><img src="images/add.png"></em>
+<div class="add-text">
+  <p>收货人：张三<span>15205026886</span></p>
+  <p>收货地址：福建省 福州市 台江区 上海街道 象园新村3座107</p>
+</div>
+<div class="bj"></div>
+</a>
+
+<div class="pay-goods">
+  <img src="images/pay-goods.jpg">
+  <div class="text">
+    <div class="quantity">x3</div>
+    <div class="title">
+      <p>裸石价格低于5000元 ，</p>
+      <p>则需支付定金500元</p>
+      <p class="price">¥ 500</p>
+    </div>
+  </div>
+</div>
+
+<div class="pay-goods">
+  <img src="images/pay-goods.jpg">
+  <div class="text2">
+     <h4>裸石自报价：</h4>
+     <p>K金颜色：</p>
+     <p>裸石形状：</p>
+     <p>戒圈大小：</p>
+     <p>宝贝尺寸：</p>
+     <p>裸石描述：</p>
+     <p>宝贝克重：</p>
+  </div>
+</div>
+
+
+<div class="pay-form">
+  配送方式
+  <span>快递￥15.00</span>
+</div>
+
+<div class="pay-message">
+  <div class="title">买家留言</div>
+  <div class="content">
+    <textarea name="" cols="" rows="" placeholder="选填： 对本次交易的说明（建议填写已和客服协商一致）"></textarea>
+  </div>
+</div>
+
+
+<p class="pay-total">共1件商品 小计<span>¥ 13295.00</span></p>
+
+<a class="settlement-btn">结算</a>
+</div>
+
+<div class="clear" style="width:100%; height:17vw;"></div>
+
+<div class="popup-bj"></div>
+<div class="close-popup">
+<p>是否立即给宝贝镶嵌？</p>
+<a>取消</a>
+<a href="payment.html">确定</a>
+</div>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+$(".settlement-btn").click(function(){
+  $(".popup-bj,.close-popup").show();
+});
+$(".close-popup a").click(function(){
+  $(".popup-bj,.close-popup").hide();
+});
+</script>
+</body>
+</html>

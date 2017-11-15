@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href="classify.html"><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+
+<div class="index">
+
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner.jpg"></div>
+            <div class="swiper-slide"><img src="images/banner.jpg"></div>
+            <div class="swiper-slide"><img src="images/banner.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="menu">
+       <a href=""><img src="images/index-menu01.jpg">私人礼品</a>
+       <a href="inlay.html"><img src="images/index-menu02.jpg">我要镶嵌</a>
+       <a href="sale.html"><img src="images/index-menu03.jpg">寄卖平台</a>
+       <a href=""><img src="images/index-menu04.jpg">绳艺配件</a>
+       <a href="news-list.html"><img src="images/index-menu05.jpg">珠宝知识库</a>
+    </div>
+</div>
+
+
+<div class="banner">
+  <img src="images/banner-title.jpg">
+</div>
+
+<a class="new-pro banner">
+  <img src="images/banner-new01.jpg">
+</a>
+
+<a class="new-pro banner">
+  <img src="images/banner-new02.jpg">
+</a>
+
+<div class="pro-box">
+  <a class="title">文玩天下<img src="images/right-i.png"></a>
+
+    <div class="banner">
+      <img src="images/banner-pro01.jpg">
+    </div>
+
+    <div class="list">
+        <a href="goods_show.html">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+    </div>
+</div>
+
+<div class="pro-box">
+  <a class="title">珠宝玉器<img src="images/right-i.png"></a>
+
+    <div class="banner">
+      <img src="images/banner-pro02.jpg">
+    </div>
+
+    <div class="list">
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+    </div>
+</div>
+
+<div class="pro-box">
+  <a class="title">镶嵌/定制<img src="images/right-i.png"></a>
+
+    <div class="banner">
+      <img src="images/banner-pro03.jpg">
+    </div>
+
+    <div class="list">
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>来图来样定制</h4>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>来图来样定制</h4>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>来图来样定制</h4>
+        </a>
+    </div>
+</div>
+
+<div class="pro-box">
+  <a class="title">私人礼品<img src="images/right-i.png"></a>
+
+    <div class="banner">
+      <img src="images/banner-pro04.jpg">
+    </div>
+
+    <div class="list">
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+        <a href="">
+          <img src="images/pro-img01.jpg">
+          <h4>9.5 寸梅妃扇骨配手绘扇面</h4>
+          <p>￥3280</p>
+        </a>
+    </div>
+</div>
+
+
+<div class="clear" style="width:100%; height:17vw;"></div>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+//图片轮播
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+
+</body>
+</html>

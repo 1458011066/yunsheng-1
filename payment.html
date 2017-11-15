@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>选择支付方式</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="header">
+  <a href="" class="return"><img src="images/right-i2.png"></a>
+  选择支付方式
+</div>
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+
+
+
+<div class="payment">
+
+  <div class="details">
+    <p>支付金额</p>
+    <p><strong>￥3280.00</strong></p>
+    <div class="name">商品名称：9.5 寸梅妃扇骨配手绘扇面</div>
+  </div>
+
+  <div class="mode">
+    <i><img src="images/mode_i2.png"></i>
+    <div class="text">
+      <p><span>微信支付</span></p>
+      <p>推荐开通微信支付的用户使用</p>
+    </div>
+    <div class="choose"><input name="" type="radio" value=""></div>
+  </div>
+  
+  <div class="mode">
+    <i><img src="images/mode_i.png"></i>
+    <div class="text">
+      <p><span>支付宝</span></p>
+      <p>推荐开通支付宝账户的用户使用</p>
+    </div>
+    <div class="choose"><input name="" type="radio" value=""></div>
+  </div>
+  <div class="clear" style="width:100%; height:2vw; background:#ececec;"></div>
+  <input type="submit" class="btn" value="立即支付">
+ 
+</div>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+$("input").click(function(){	
+  var a=$(this).is(':checked')
+  var b=$(this).children("input")
+  if(a)
+  {
+	  $(this).parents(".choose").addClass("on");
+	  b.removeAttr("Checked")
+  }
+  else
+  {
+	  $(this).parents(".choose").removeClass("on");
+	  b.attr("checked", true);
+  }
+});
+</script>
+</body>
+</html>

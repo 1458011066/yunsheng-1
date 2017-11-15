@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>支付定金</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="header">
+  <a href="" class="return"><img src="images/right-i2.png"></a>
+  支付定金
+</div>
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+<div class="shop-cart">
+  <ul>
+    <li>
+      <div class="choose"><input name="" type="checkbox" value=""></div>
+      <img src="images/style-img.jpg">
+      <div class="text">
+        <div class="price">¥ 500</div>
+        <div class="delete">删除</div>
+        <div class="quantity">x3</div>
+        <div class="title">
+          <p>裸石价格低于5000元 ，</p>
+          <p>则需支付定金500元</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="choose"><input name="" type="checkbox" value=""></div>
+      <img src="images/style-img.jpg">
+      <div class="text">
+        <div class="price">¥ 500</div>
+        <div class="delete">删除</div>
+        <div class="quantity">x3</div>
+        <div class="title">
+          <p>裸石价格低于5000元 ，</p>
+          <p>则需支付定金500元</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+<div class="settle-bottom">
+<div class="choose"><input name="" type="checkbox" value=""></div>
+<div class="text">全选</div>
+<div class="total">合计：<strong>¥ 500</strong><span>( 不含运费 )</span></div>
+</div>
+
+<div class="clear"></div>
+<a href="pay.html" class="settlement-btn">结算</a>
+
+
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+$("input").click(function(){	
+  var a=$(this).is(':checked')
+  var b=$(this).children("input")
+  if(a)
+  {
+	  $(this).parents(".choose").addClass("on");
+	  b.removeAttr("Checked")
+  }
+  else
+  {
+	  $(this).parents(".choose").removeClass("on");
+	  b.attr("checked", true);
+  }
+});
+</script>
+</body>
+</html>

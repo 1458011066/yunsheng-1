@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>尾款</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="retainage">
+
+  <div class="state">审核状态:<span>审核成功</span></div>
+  <div class="title">支付尾款</div>
+  
+  <div class="text">
+    <ul>
+      <li>
+        K金：<span>¥ 2000</span>
+        <p>（按下单当天金价为准）</p>
+      </li>
+      <li>辅石及工费：<span>¥ 1200</span></li>
+      <li>设计费：<span>¥ 500</span></li>
+      <li>起版费：<span>¥ 200</span></li>
+      <li>镶嵌费：<span>¥ 300</span></li>
+      <li>
+        裸石保价费：<span>总价15% = ¥ 1200</span>
+        <p>（根据裸石价格进行保价）</p>
+      </li>
+      <li>其他费用：<span></span></li>
+      <li>总费用：<span>¥ 5400</span></li>
+    </ul>
+  </div>
+ 
+  <div class="text">
+    <ul>
+      <li>积分抵扣：<span>-¥ 300</span><i><input name="" type="checkbox" value=""><img src="images/pitch-on.png"></i></li>
+      <li>总计费用：<span>¥ 5100</span></li>
+      <li>定金费用：<span>总价40% = ¥ 2040</span></li>
+      <li>尾款费用：<span>¥ 3060</span></li>
+    </ul>
+  </div>
+  
+  <div class="ps">备注：要求3颗20分碎钻，18K镶嵌</div>
+  
+
+<div class="del-mode">
+<div class="menu">
+<a class="on">邮寄快递</a>
+<a>门店自提</a>
+</div>
+
+<a class="pay-add" href="add-admin.html">
+<i><img src="images/right-i2.png"></i>
+<em><img src="images/add.png"></em>
+<div class="add-text">
+  <p>收货人：张三<span>15205026886</span></p>
+  <p>收货地址：福建省 福州市 台江区 上海街道 象园新村3座107</p>
+</div>；
+<div class="bj"></div>
+</a>
+
+</div> 
+
+
+
+  
+  <div class="text2">
+    <p>注意事项：</p>
+    <p>1、顾客认真阅读有关镶嵌内容。</p>
+    <p>2、镶嵌成成品以后，除非因为单据内容、工厂差错外</p>
+    <p>（款式、颜色、K金尺寸），顾客不得以任何借口要求修改，</p>
+    <p>若要修改视为重新接单，另收费用。</p>
+    <p>3、三个月内须结算领货，或邮寄到客户留下的收货地址。</p>
+  </div>
+  
+  <div class="text2">
+    <p>售后服务：</p>
+    <p>1、该首饰可免费清洗</p>
+    <p>2、戒圈尺寸的改动，仅收取邮寄费用及材料的成本费用。</p>
+    <p>3、K金可回收抵扣费用</p>
+    <p>4、可登陆云生·嘉骐寄卖该首饰。</p>
+  </div>
+  
+  <div class="pay-btn">
+    <a href="">支付尾款</a>
+  </div>
+  
+</div>
+
+
+
+
+<div class="clear" style="width:100%; height:17vw;"></div>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+$(".text ul li i").click(function(){	
+  var a=$(this).children("input").is(':checked')
+  var b=$(this).children("input")
+  if(a)
+  {
+	  $(this).removeClass("choose-tick");
+	  b.removeAttr("Checked")
+  }
+  else
+  {
+	  $(this).addClass("choose-tick");
+	  b.attr("checked", true);
+  }
+});
+</script>
+<body>
+</body>
+</html>

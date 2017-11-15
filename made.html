@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>来图来样定制</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="made">
+  <div class="banner">
+      <img src="images/banner-made.jpg">
+      <img src="images/made-title.jpg">
+  </div>
+
+  <div class="made-form">
+    <div class="title">1/ 上传款式照片<i><img src="images/open.png"></i></div>
+    <div class="upload-img upload-table">
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <div class="btn"><input type="file"><img src="images/upload-btn.jpg"></div>
+    </div>
+  </div>
+
+  <div class="made-form">
+    <div class="title">2/ 上传裸石照片<i><img src="images/open.png"></i></div>
+    <div class="upload-img upload-table">
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <div class="btn"><input type="file"><img src="images/upload-btn.jpg"></div>
+    </div>
+  </div>
+
+  <div class="made-form">
+    <div class="title">3/ 填写裸石信息<i><img src="images/open.png"></i></div>
+    <div class="upload-table">
+      <div class="ps">*请如实填写， 嘉骐·云生会根据每一块宝石的特点、解理(包括瑕疵)进行最适合的设计。 嘉骐·云生        见证珠宝珍贵时刻！</div>
+      <div class="clear"></div>
+      <div class="menu">
+        <a><img src="images/tb1.png">方形<i></i></a>
+        <a><img src="images/tb2.png">圆形<i></i></a>
+        <a><img src="images/tb3.png">滴水形<i></i></a>
+        <a><img src="images/tb4.png">其他形状<i></i></a>
+      </div>
+      <div class="hang"><span>宝贝尺寸:</span><input name="" type="text"></div>
+      <div class="hang"><span>宝贝克重:</span><input name="" type="text"></div>
+      <div class="hang"><span>颜色净度:</span><input name="" type="text"></div>
+      <div class="hang"><span>购买价格:</span><input name="" type="text"></div>
+      <div class="hang"><span>裸石描述:</span><textarea name="" cols="" rows=""></textarea></div>
+    </div>
+  </div>
+  <div class="kefu"><img src="images/nav06-2.png">在线客服</div>
+  <div class="made-pay banner">
+    <a class="btn-pay" href="deposit.html">支付定金</a>
+    <a class="btn-mail">邮寄裸石</a>
+    <img src="images/made-pay.jpg">
+  </div>
+  <div class="banner">
+    <img src="images/banner-inlay05.jpg">
+  </div>
+  <div class="bot-service">
+    <div class="title">服务<img src="images/right-i2.png"></div>
+      <a href=""><img src="images/right-i3.png">镶嵌必读</a>
+      <a href=""><img src="images/right-i3.png">常见问题解答</a>
+      <a href=""><img src="images/right-i3.png">配送选项</a>
+      <a href=""><img src="images/right-i3.png">隐私政策</a>
+      <a href=""><img src="images/right-i3.png">会员积分</a>
+      <a href=""><img src="images/right-i3.png">常见问题解答</a>
+      <a href=""><img src="images/right-i3.png">配送选项</a>
+      <a href=""><img src="images/right-i3.png">隐私政策</a>
+  </div>
+</div>
+
+<div class="clear" style="width:100%; height:17vw;"></div>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".made-form .title").click(function(){
+        $(this).siblings(".upload-table").slideToggle("slow");
+      });
+	$(".upload-table .menu a").click(function(){
+		$(".upload-table .menu a").removeClass("on")
+        $(this).addClass("on")
+      });
+  });
+</script>
+</body>
+</html>

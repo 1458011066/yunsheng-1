@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>订单信息</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="header">
+  <a href="" class="return"><img src="images/right-i2.png"></a>
+  确认详情
+</div>
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+<div class="orders-show" style=" padding:0;">
+<ul>
+<li><span>订单号</span>1008682545112</li>
+<li><span>下单时间</span>2016-10-21 09:35</li>
+<li><span>支付时间</span>2016-10-21 09:36</li>
+<li><span>订单状态</span>未支付</li>
+<li><span>商家状态</span>待确认</li>
+<li><span>支付金额</span>￥999</li>
+</ul>
+<div class="title">定制信息</div>
+</div>
+
+<div class="made-form">
+    <div class="title">1/ 款式照片<i><img src="images/open.png"></i></div>
+    <div class="upload-img upload-table">
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <div class="btn"><input type="file"><img src="images/upload-btn.jpg"></div>
+    </div>
+  </div>
+
+  <div class="made-form">
+    <div class="title">2/ 裸石照片<i><img src="images/open.png"></i></div>
+    <div class="upload-img upload-table">
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <a class="img"><img src="images/pro-img01.jpg"></a>
+      <div class="btn"><input type="file"><img src="images/upload-btn.jpg"></div>
+    </div>
+  </div>
+
+  <div class="made-form">
+    <div class="title">3/ 裸石信息<i><img src="images/open.png"></i></div>
+    <div class="upload-table">
+      <div class="ps"></div>
+      <div class="clear"></div>
+      <div class="menu">
+        <a><img src="images/tb1.png">方形<i></i></a>
+        <a><img src="images/tb2.png">圆形<i></i></a>
+        <a><img src="images/tb3.png">滴水形<i></i></a>
+        <a><img src="images/tb4.png">其他形状<i></i></a>
+      </div>
+      <div class="hang"><span>宝贝尺寸:</span><input name="" type="text"></div>
+      <div class="hang"><span>宝贝克重:</span><input name="" type="text"></div>
+      <div class="hang"><span>颜色净度:</span><input name="" type="text"></div>
+      <div class="hang"><span>购买价格:</span><input name="" type="text"></div>
+      <div class="hang"><span>裸石描述:</span><textarea name="" cols="" rows=""></textarea></div>
+    </div>
+  </div>
+<div class="orders-show">
+<div class="title">备注</div>
+<div class="text">
+备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息备注信息
+</div>
+
+<a href="" class="btn confirm">立即支付</a>
+<a href="" class="btn cancel">取消订单</a>
+</div>
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".made-form .title").click(function(){
+        $(this).siblings(".upload-table").slideToggle("slow");
+      });
+	$(".upload-table .menu a").click(function(){
+		$(".upload-table .menu a").removeClass("on")
+        $(this).addClass("on")
+      });
+  });
+</script>
+</body>
+</html>

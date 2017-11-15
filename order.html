@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>确认订单</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav>
+  <a href="index.html"><img src="images/nav01.png">首页</a>
+  <a href="inlay.html"><img src="images/nav02.png">我要镶嵌</a>
+  <a href=""><img src="images/nav03.png">分类</a>
+  <a href=""><img src="images/nav04.png">购物车</a>
+  <a href="member.html"><img src="images/nav05.png">我的云生</a>
+</nav>
+
+<div class="header">
+  <a href="" class="return"><img src="images/right-i2.png"></a>
+  确认订单
+</div>
+<div class="clear" style="width:100%; height:3vw; background:#ececec;"></div>
+
+<div class="orders-list">
+<a href="order-vb.html">订单编号:2016081316160662792222<img src="images/right-i2.png"></a>
+<a href="order-vb.html">订单编号:2016081316160662792222<img src="images/right-i2.png"></a>
+<a href="order-vb.html">订单编号:2016081316160662792222<img src="images/right-i2.png"></a>
+</div>
+<p class="down">下拉加载更多...</p>
+</div>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script>
+$(document).ready(function(){
+$(".orders-list ul li").click(function(){
+    if( $(this).hasClass("on")) 
+	{ 
+	    $(this).removeClass("on")
+	}
+	
+    else
+	{ 
+	    $(this).addClass("on")
+    }
+});
+});
+</script>
+
+</body>
+</html>
